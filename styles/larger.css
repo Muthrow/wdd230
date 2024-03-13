@@ -1,0 +1,49 @@
+/* Large Screen */
+@media only screen and (min-width: 40rem) {
+
+    /* Card Styling */
+    .card-parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 7px;
+    }
+
+    .card-parent section {
+        box-shadow: 1px 1px 2px 1px black;
+        
+    }
+
+    /* Nav Styling */
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .header {
+        grid-template-rows: auto 50px;
+    }
+
+    .header-nav ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 40rem) {
+    
+    /* Nav Styling */
+        .nav-header {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            text-decoration: none;
+        }
+
+        .header {
+            grid-template-rows: 1fr 1fr;
+
+        }
+}
